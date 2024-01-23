@@ -21,8 +21,8 @@
 
 - docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
-  # To run jenkins server detatch mode in background
-  -docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+# To run jenkins server detatch mode in background
+-docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 
 # to run jenkins container always even when the servers restarts
