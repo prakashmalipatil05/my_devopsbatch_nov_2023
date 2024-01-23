@@ -11,22 +11,16 @@
 # to start the docker services
 - systemctl start docker
 
-
 # to Enable the docker services
-
 - systemctl enable docker
 
-
 # To run jenkins server using docker image
-
 - docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 # To run jenkins server detatch mode in background
--docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
-
+- docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 # to run jenkins container always even when the servers restarts
-
 - docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts --restart unless-stopped
 
 # How to check the docker running containers
@@ -36,15 +30,13 @@
 - docker ps -a
 
 # to start the docker conatiner 
-docker start "container_id"
-
+- docker start "container_id"
 
 # how to enter inside the container 
-
- - docker exec -it "container_id" /bin/bash
+- docker exec -it "container_id" /bin/bash
 
 # to get the initial password 
-cat /var/jenkins_home/secrets/initialAdminPassword
+- cat /var/jenkins_home/secrets/initialAdminPassword
 
 
 
