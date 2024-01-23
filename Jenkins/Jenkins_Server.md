@@ -29,11 +29,11 @@
 
 - docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts --restart unless-stopped
 
-
-# How to check the docker all running containers
+# How to check the docker running containers
+- docker ps
+  
+# How to check the docker all running and stopped containers
 - docker ps -a
-- docker ps 
-
 
 # to start the docker conatiner 
 docker start "container_id"
