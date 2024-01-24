@@ -5,6 +5,7 @@
 
 # to Untar
 - tar -zvxf apache-tomcat-8.5.96.tar.gz
+- tar -zvxf apache-tomcat-9.0.85.tar.gz
 
 
 # to install java 
@@ -14,6 +15,7 @@ yum install java-11 -y
 
  # go to 
 - cd /home/ec2-user/apache-tomcat-8.5.96/bin/
+- cd /home/ec2-user/apache-tomcat-9.0.85/bin/
 - ./startup.sh
 
 
@@ -39,6 +41,9 @@ Usually it will under 2 places, and it neeeds to be changed in both the places
 
 - /home/ec2-user/apache-tomcat-8.5.96/webapps/host-manager/META-INF/context.xml
 - /home/ec2-user/apache-tomcat-8.5.96/webapps/manager/META-INF/context.xml
+  # new version
+  /home/ec2-user/apache-tomcat-9.0.85/webapps/host-manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-9.0.85/webapps/manager/META-INF/context.xml
 
 
 # to Edit the File with vi
@@ -67,6 +72,8 @@ Sample
 # Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users using vi tomcat-users.xml
 
 # /home/ec2-user/apache-tomcat-8.5.96/conf/tomcat-users.xml file
+- /home/ec2-user/apache-tomcat-9.0.85/conf/tomcat-users.xml file
+
 
 
 
@@ -82,6 +89,10 @@ Sample
 # Restart the server 
 - /home/ec2-user/tomcat/apache-tomcat-8.5.96/bin/shutdown.sh
 - /home/ec2-user/tomcat/apache-tomcat-8.5.96/bin/startup.sh
+
+  # new
+- /home/ec2-user/tomcat/apache-tomcat-9.0.85/bin/shutdown.sh
+- /home/ec2-user/tomcat/apache-tomcat-9.0.85/bin/startup.sh
 
 
 _________________________________________________________________________________________________________________-________________
